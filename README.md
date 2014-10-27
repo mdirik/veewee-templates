@@ -7,6 +7,6 @@ The original template doesn't preseed correctly, so some modifications to boot l
 
 ## Notes
 
-1. Some post processors like chef, puppet and ruby are disabled. Enable them if required.
+1. Some postinstall files like chef, puppet and ruby are disabled. Enable them if required.
 2. GRUB still may ask questions.
-
+3. The guest's apt uses host's apt-cacher-ng by default. Disable `apt-proxy.sh` postinstall entry if you don't want this behaviour.
